@@ -1,0 +1,17 @@
+# This is a config for E2B sandbox template.
+# You can use template ID (zjcxt2jtmwzv2g9bf8w3) or template name (buildora-9417679910) to create a sandbox:
+
+# Python SDK
+# from e2b import Sandbox, AsyncSandbox
+# sandbox = Sandbox("buildora-9417679910") # Sync sandbox
+# sandbox = await AsyncSandbox.create("buildora-9417679910") # Async sandbox
+
+# JS SDK
+# import { Sandbox } from 'e2b'
+# const sandbox = await Sandbox.create('buildora-9417679910')
+
+team_id = "89d43369-ed53-416c-91b5-178bac5a5abf"
+start_cmd = "/compile_page.sh"
+dockerfile = "e2b.Dockerfile"
+template_name = "buildora-9417679910"
+template_id = "zjcxt2jtmwzv2g9bf8w3"
