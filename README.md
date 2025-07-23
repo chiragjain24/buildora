@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 Docker Template Build:
-e2b template build --name buildora-9417679910 --cmd "/compile_page.sh" --no-cache
+e2b template build --name buildora-9417679910 --cmd "/compile_page.sh"
