@@ -6,9 +6,7 @@ import React, { useState } from 'react'
 import { toast } from 'sonner'
 import { Input } from '@/components/ui/input'
 
-type Props = {}
-
-const Page = (props: Props) => {
+const Page = () => {
   const trpc = useTRPC();
   const [input, setInput] = useState("");
   const createMessage = useMutation(trpc.messages.create.mutationOptions({
