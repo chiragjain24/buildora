@@ -36,5 +36,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-Docker Template Build:
+# Docker Template Build:
 e2b template build --name buildora-9417679910 --cmd "/compile_page.sh"
+
+# Prisma Client Generate:
+pnpm dlx prisma generate
+
+pnpm dlx prisma migrate dev
+
+# Inngest Server
+pnpm dlx inngest-cli@latest dev
