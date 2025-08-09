@@ -6,11 +6,10 @@ import TextareaAutoSize from "react-textarea-autosize";
 
 import { useTRPC } from "@/trpc/client";
 import { cn } from "@/lib/utils";
-import { useQueryClient , useQuery, useMutation} from "@tanstack/react-query";
+import { useQueryClient , useMutation} from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Form, FormField } from "@/components/ui/form";
 import { ArrowUpIcon, Loader2Icon } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 interface Props {

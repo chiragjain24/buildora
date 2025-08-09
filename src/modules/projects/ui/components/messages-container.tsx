@@ -1,5 +1,5 @@
 import { useTRPC } from "@/trpc/client";
-import { Fragment, Message } from "@prisma/client";
+import { Fragment } from "@prisma/client";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { MessageCard } from "./message-card";
 import { MessageForm } from "./message-form";
