@@ -35,7 +35,7 @@ export const ProjectView = ({ projectId }: Props) => {
         <div className="h-screen">
             <ResizablePanelGroup direction="horizontal">
                 <ResizablePanel
-                    defaultSize={35}
+                    defaultSize={30}
                     minSize={20}
                     className="flex flex-col min-h-0"
                 >
@@ -51,10 +51,10 @@ export const ProjectView = ({ projectId }: Props) => {
                     </Suspense>
                 </ResizablePanel>
 
-                <ResizableHandle withHandle />
+                <ResizableHandle className="hover:bg-primary transition-colors"/>
 
                 <ResizablePanel 
-                    defaultSize={65}
+                    defaultSize={70}
                     minSize={50}
                     className="flex flex-col min-h-0"
                 >
@@ -76,7 +76,7 @@ export const ProjectView = ({ projectId }: Props) => {
                                 </TabsTrigger>
                             </TabsList>
                             <div className="ml-auto flex items-center gap-x-2">
-                                <Button asChild size="sm" variant="default">
+                                <Button asChild size="sm" variant="tertiary">
                                     <Link href={`/pricing`}>
                                         <CrownIcon className="size-4" />
                                         Upgrade
