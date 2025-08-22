@@ -1,6 +1,6 @@
 "use client";
 
-import { useTRPC } from "@/trpc/client";
+// import { useTRPC } from "@/trpc/client";
 // import { useSuspenseQuery } from "@tanstack/react-query";
 import { 
     ResizableHandle,
@@ -17,13 +17,14 @@ import { CodeIcon, CrownIcon, EyeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FileExplorer } from "@/components/file-explorer";
+import { UserControl } from "@/components/user-control";
 
 interface Props {
     projectId: string;
 }
 
 export const ProjectView = ({ projectId }: Props) => {
-    const trpc = useTRPC();
+    // const trpc = useTRPC();
     const [activeFragment, setActiveFragment] = useState<Fragment | null>(null);
     const [tabState, setTabState] = useState<"preview" | "code">("preview");
 
@@ -82,6 +83,7 @@ export const ProjectView = ({ projectId }: Props) => {
                                         Upgrade
                                     </Link>
                                 </Button>
+                                <UserControl />
                             </div>
                         </div>
                         <TabsContent value="preview">
